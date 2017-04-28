@@ -24,11 +24,11 @@
 			<span id="mensaje"></span>
 			
 			<br><label for="dni">DNI</label><br>
-			<input type="number" id="dni" required="" maxlength="8" class="entrada" placeholder="Ingrese DNI"/><br>
+			<input type="number" id="dni" required="" pattern="([0-9]{8})" class="entrada" placeholder="Ingrese DNI"/><br>
 			<span id="mensaje"></span>
 			
 			<br><label for="nac">Fecha de nacimiento</label><br>
-			<input type="number" id="nac" required="" class="entrada" placeholder="DD-MM-AAAA"/><br>
+			<input type="date" id="nac" required="" min="01-01-1900" max="12-31-1999" class="entrada"/><br>
 			<span id="mensaje"></span>
 
 			<br><label for="cel">Celular</label><br>
@@ -40,11 +40,11 @@
 			<span id="mensaje"></span>
 
 			<br><label for="pass">Contraseña</label><br>
-			<input type="text" id="pass" required="" class="entrada" placeholder="Ingrese contraseña"/><br>
+			<input type="password" id="pass" required="" class="entrada" placeholder="Ingrese contraseña"/><br>
 			<span id="mensaje"></span>
 
 			<br><label for="passw">Reconfirme contraseña</label><br>
-			<input type="text" id="passw" required="" class="entrada" placeholder="Ingrese contraseña"/><br>
+			<input type="password" id="passw" required="" class="entrada" placeholder="Ingrese contraseña"/><br>
 			<span id="mensaje"></span>
 
 			<br><label for="txarea">Comentarios</label><br>

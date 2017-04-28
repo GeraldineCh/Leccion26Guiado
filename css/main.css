@@ -19,11 +19,7 @@ span {
 		font-size: 8pt;
 }
 
-input[type="text"] {
-    background-color: rgb(244, 223, 66);
-}
-
-input[type="number"] {
+input {
     background-color: rgb(244, 223, 66);
 }
 
