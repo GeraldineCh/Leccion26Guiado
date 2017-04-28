@@ -16,15 +16,15 @@
 
 
 			<label for="name">Nombre</label><br>
-			<input type="text" id="name" required="" class="entrada" placeholder="Ingrese nombres" /><br>
+			<input type="text" id="name" required="" pattern="([A-Z]{1}[a-z]{1,})" class="entrada" placeholder="Ingrese nombres" /><br>
 			<span id="mensaje"></span>
 			
 			<br><label for="ap">Apellido</label><br>
-			<input type="text" id="ap" required="" class="entrada" placeholder="Ingrese apellidos"/><br>
+			<input type="text" id="ap" required="" pattern="([A-Z]{1}[a-z]{1,})" class="entrada" placeholder="Ingrese apellidos"/><br>
 			<span id="mensaje"></span>
 			
 			<br><label for="dni">DNI</label><br>
-			<input type="number" id="dni" required="" pattern="([0-9]{8})" class="entrada" placeholder="Ingrese DNI"/><br>
+			<input type="text" id="dni" required="" pattern="[0-9]{8}" max="8" class="entrada" placeholder="Ingrese DNI"/><br>
 			<span id="mensaje"></span>
 			
 			<br><label for="nac">Fecha de nacimiento</label><br>
@@ -32,15 +32,15 @@
 			<span id="mensaje"></span>
 
 			<br><label for="cel">Celular</label><br>
-			<input type="number" id="cel" required="" maxlength="9" class="entrada" placeholder="Ingrese número de celular"/><br>
+			<input type="text" id="cel" required="" pattern="([0-9]{9})" class="entrada" placeholder="Ingrese número de celular"/><br>
 			<span id="mensaje"></span>
 
 			<br><label for="fijo">Teléfono</label><br>
-			<input type="number" id="fijo" required="" maxlength="9" class="entrada" placeholder="Ingrese número fijo"/><br>
+			<input type="text" id="fijo" required="" pattern="([0-9]{7})" class="entrada" placeholder="Ingrese número fijo"/><br>
 			<span id="mensaje"></span>
 
 			<br><label for="pass">Contraseña</label><br>
-			<input type="password" id="pass" required="" class="entrada" placeholder="Ingrese contraseña"/><br>
+			<input type="password" id="pass" required="" pattern="([0-9]{6,})" class="entrada" placeholder="Ingrese contraseña"/><br>
 			<span id="mensaje"></span>
 
 			<br><label for="passw">Reconfirme contraseña</label><br>
